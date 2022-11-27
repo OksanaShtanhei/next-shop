@@ -1,0 +1,54 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        text-decoration: none;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    button{
+        background: rgb(248, 182, 250);
+        border: 1px solid white;
+        padding: 15px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+.card{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1000px) {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 75vw;
+        }
+    } 
+    img{
+        object-fit: contain;
+    } 
+    }
+.card_components{
+    margin: 2rem;
+    color: gray;
+    .card_main_img{
+        display: block;
+    }
+    .card_img_container{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .card_title{
+        color: rgb(102, 40, 104);
+    }
+}
